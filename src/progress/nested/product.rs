@@ -12,7 +12,7 @@ use abomonation::Abomonation;
 ///
 /// We use `Product` rather than `(TOuter, TInner)` so that we can derive our own `PartialOrd`,
 /// because Rust just uses the lexicographic total order.
-#[derive(Copy, Clone, Hash, Eq, PartialEq, Default, Ord)]
+#[derive(Copy, Clone, Hash, Eq, PartialEq, Default)]
 pub struct Product<TOuter, TInner> {
     /// Outer timestamp.
     pub outer: TOuter,
